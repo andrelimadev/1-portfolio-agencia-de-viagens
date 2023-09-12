@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #80808029;
+    font-family: 'Raleway', sans-serif;
+}
+
+.largura {
+    width: 100%;
+    max-width: 1024px;
+}
+
+header {
+    width: 100%;
+    height: 55px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.topo img {
+    width: 32px;
+    height: 32px;
+}
+
+.topo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.topo p {
+    font-size: 24px;
+    color: #5d15d1;
+    margin-left: 10px;
+}
+
+.formulario {
+    width: 100%;
+    height: auto;
+    background-image: url('../imagens/bahia.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-formulario {
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 100%;
+    height: auto;
+}
+
+.topo-formulario {
+    width: 100%;
+    height: 35px;
+    background-color: #5d15d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topo-formulario img {
+    width: 20px;
+    height: 20px;
+    rotate: -45deg;
+}
+
+.topo-formulario h1 {
+    font-size: 14px;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.corpo-formulario {
+    width: calc(100% - 50px);
+    background-color: #fff;
+    padding: 30px 25px 20px;
+}
+
+.corpo-formulario h2 {
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 16px;
+}
+
+.dig {
+    width: 100%;
+    height: 32px;
+    margin: 10px 0;
+}
+
+form input {
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+form select {
+    padding: 0 3px;
+}
+
+.container-duplo {
+    width: 100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ida, .volta, .origem, .destino {
+    width: 50%;
+}
+
+.origem, .ida {
+    margin: 0 10px 0 0;
+}
+
+.destino, .volta {
+    margin: 0 0 0 10px;
+}
+
+.cama-infantil, .preferencias {
+    display: flex;
+    align-items: center;
+    line-height: 40px;
+}
+
+.cama {
+    width: 140px;
+}
+
+.preferencias {
+    width: 50%;
+    justify-content: space-between;
+}
+
+.cama input, .preferencias input {
+    /* width: 15px; */
+    margin-right: 8px;
+}
+
+button {
+    width: 160px;
+    height: 32px;
+    border: none;
+    background-color: #5d15d1;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.ofertas, .anuncios {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 32px auto 0;
+}
+
+.ofertas h2, .anuncios h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.ofertas h3, .anuncios h3 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.fotos {
+    width: 100%;
+    height: 375px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foto-grande {
+    position: relative;
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.quatro-fotos {
+    width: calc(50% - 10px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.quatro-fotos figure {
+    position: relative;
+    width: calc(50% - 10px);
+    height: calc(50% - 10px);
+    margin: 0 6px;
+}
+
+.foto-grande img, .quatro-fotos img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.foto-grande figcaption, .quatro-fotos figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    font-size: 17px;
+    color: #fff;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+.anuncios-fotos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.anuncio {
+    width: calc(50% - 10px);
+    height: 100%;
+    object-fit: cover;
+}
+
+.anuncio img {
+    width: 100%;
+    height: 100%;
+}
+
+.anuncio h3, .anuncio p {
+    background-color: #fff;
+    margin: 0;
+}
+
+.anuncio h3 {
+    padding: 15px 0 0 15px;
+    font-weight: bold;
+}
+
+.anuncio p {
+    font-size: 14px;
+    padding: 5px 0 15px 15px;
+}
+
+footer {
+    width: 100%;
+    margin-top: 32px;
+    background-color: #5d15d1;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.contato, .redes {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.contato h3, .redes h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.cont {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.cont img {
+    width: 18px;
+}
+
+.cont span {
+    color: #fff;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+/* Media Queries */
+
+@media (max-width: 1100px) {
+
+    .largura {
+        width: 90%;
+    }
+
+    .cama-infantil, .preferencias {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .cama-infantil, .preferencias {
+        width: 70%;
+    }
+    
+    button {
+        width: 100%;
+    }
+
+    .fotos {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .foto-grande, .quatro-fotos {
+        width: 100%;
+    }
+
+    .foto-grande figure, .quatro-fotos figure {
+        width: 100%;
+        height: 225px;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+
+    .anuncios-fotos {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .anuncios h3 {
+        margin-bottom: 0;
+    }
+
+    .anuncio, .anuncio img {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .anuncio h3, .anuncio p {
+        background-color: #fff;
+        margin: 0;
+    }
+
+    .anuncio h3 {
+        padding: 15px 0 0 15px;
+        font-weight: bold;
+    }
+
+    .anuncio p {
+        padding: 5px 0 15px 15px;
+    }
+
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contato, .redes {
+        width: 250px;
+    }
+}
+
+@media (max-width: 540px) {
+
+    .container-duplo {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .container-duplo div {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .cama-infantil, .preferencias {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .anuncio, .anuncio img {
+        width: 100%;
+    }
+
+    .anuncio h3, .anuncio p {
+        background-color: #fff;
+        margin: 0;
+    }
+
+    .anuncio h3 {
+        padding: 15px 0 0 15px;
+        font-weight: bold;
+    }
+
+    .anuncio p {
+        padding: 5px 0 15px 15px;
+    }
+}
